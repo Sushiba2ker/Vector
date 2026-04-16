@@ -1,11 +1,13 @@
 -keepclasseswithmembers,includedescriptorclasses class * {
     native <methods>;
 }
--keepclasseswithmembers class org.matrix.vector.daemon.VectorDaemon {
+-keep class org.matrix.vector.daemon.VectorDaemon {
     public static void main(java.lang.String[]);
+    *;
 }
--keepclasseswithmembers class org.matrix.vector.daemon.Cli {
+-keep class org.matrix.vector.daemon.Cli {
     public static void main(java.lang.String[]);
+    *;
 }
 
 
