@@ -75,7 +75,7 @@ jobs:
 
       - name: Build with Gradle
         run: |
-          ./gradlew zipAll
+          ./gradlew clean zipAll
 
       - name: Prepare artifact
         if: success()

@@ -1,14 +1,8 @@
 -keepclasseswithmembers,includedescriptorclasses class * {
     native <methods>;
 }
--keep class org.matrix.vector.daemon.VectorDaemon {
-    public static void main(java.lang.String[]);
-    *;
-}
--keep class org.matrix.vector.daemon.Cli {
-    public static void main(java.lang.String[]);
-    *;
-}
+-keep class org.matrix.vector.daemon.** { *; }
+-keepclassmembers class org.matrix.vector.daemon.** { *; }
 
 
 # Keep IPC data models intact so Gson serializes the correct JSON keys
